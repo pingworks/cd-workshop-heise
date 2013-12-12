@@ -1,0 +1,9 @@
+Package: musicdb
+Version: [[version]]
+Section: misc
+Priority: optional
+Architecture: all
+Depends: tomcat7
+Maintainer: Christoph Lukas <info@pingworks.de>
+Description: Simple Music DB
+Distribution: development
