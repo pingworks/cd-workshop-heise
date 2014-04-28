@@ -3,9 +3,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.pingworks.examples</groupId>
 	<artifactId>musicDB</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${version}</version>
 	<packaging>war</packaging>
 	<name>Simple Music DB</name>
+	<properties>
+		<version>0.0.1-SNAPSHOT</version>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>com.sun.faces</groupId>
