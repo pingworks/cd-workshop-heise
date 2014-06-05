@@ -1,0 +1,19 @@
+#!/bin/bash
+
+JENKINSURL="http://localhost:9080"
+JOB="1-commit-stage"
+TOKEN="chahRee3Ko3k"
+
+# read all commit ids and refnames from stdin
+# but only keep the last one
+while read oldrev newrev refname
+do
+  REV=$newrev
+done
+REV=${REV:0:7}
+
+# trigger the initial pipeline job
+url="${JENKINSURL}/buildByToken/buildWithParameters?job=${JOB}&token=${TOKEN}&SHA=${REV}"
+
+curl "${url}"
+
