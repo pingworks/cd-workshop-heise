@@ -15,7 +15,7 @@ public class UITest {
     public void main() {
         WebDriver driver = new FirefoxDriver();
         
-        driver.get("http://testenv1:1080/musicDB/");
+        driver.get("http://testenv1:8080/musicDB/");
         
         WebElement title = driver.findElement(By.xpath("/html/body/div[1]/div/span"));
         Assert.assertEquals("Simple PrimeFaces Music DB", title.getText());
