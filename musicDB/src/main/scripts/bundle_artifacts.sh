@@ -22,6 +22,7 @@ rm -rf bundle
 mkdir -p bundle/{artifacts,metadata}
 cp ${ARTIFACTS} bundle/artifacts/
 cp ${INSTALLER} bundle/artifacts/
+chmod 755 bundle/artifacts/install.sh
 
 echo "$(echo $VERSION | cut -d- -f1)" > bundle/metadata/timestamp
 echo "$(echo $VERSION | cut -d- -f2)" > bundle/metadata/commitid
