@@ -13,6 +13,7 @@ fi
 
 BUNDLENAME=${BASE}-bundle
 ARTIFACTS="${BASE}-${VERSION}.war"
+INSTALLER="../src/main/scripts/install.sh"
 
 BUNDLEFILENAME="${BUNDLENAME}_${VERSION}.tar.gz"
 
@@ -20,6 +21,7 @@ cd ${BASE}/target
 rm -rf bundle
 mkdir -p bundle/{artifacts,metadata}
 cp ${ARTIFACTS} bundle/artifacts/
+cp ${INSTALLER} bundle/artifacts/
 
 echo "$(echo $VERSION | cut -d- -f1)" > bundle/metadata/timestamp
 echo "$(echo $VERSION | cut -d- -f2)" > bundle/metadata/commitid
