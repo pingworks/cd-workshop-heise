@@ -18,6 +18,6 @@ echo "Starting Tomcat .."
 sudo /etc/init.d/tomcat7 start
 echo -e "done.\n"
 
-echo "Running Smoke Test for http://testenv1:8080/musicDB/ .."
-wget -q -O/dev/null http://testenv1:8080/musicDB/
+echo "Running Smoke Test for http://localhost:8080/musicDB/ .."
+wget -q -O/dev/null http://localhost:8080/musicDB/
 echo -e "done.\n"
